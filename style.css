@@ -1,11 +1,15 @@
-/* Reset some default browser styles */
+/* =========================
+   RESET DEFAULT STYLES
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base Styles */
+/* =========================
+   BASE STYLES
+========================= */
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -22,7 +26,9 @@ ul {
   list-style-type: none;
 }
 
-/* Header */
+/* =========================
+   HEADER
+========================= */
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -30,6 +36,7 @@ ul {
   padding: 20px;
   background-color: #1b2d4f;
   color: white;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -39,6 +46,7 @@ ul {
 .nav-links {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .nav-links li a {
@@ -50,22 +58,25 @@ ul {
   text-decoration: underline;
 }
 
-/* Hero Section */
+/* =========================
+   HERO / BANNER SECTION
+========================= */
 .hero-section {
-  background: url('https://i.postimg.cc/Ss8hxRxP/banner.jpg') no-repeat center center/cover;
+  background: url('https://i.postimg.cc/Ss8hxRxP/banner.jpg') no-repeat center center / cover;
   height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
   color: white;
   max-width: 90%;
+  border-radius: 10px;
 }
 
 .hero-overlay h1 {
@@ -81,17 +92,20 @@ ul {
 .cta-button {
   background-color: #2e6b3b;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 5px;
   font-weight: bold;
   display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #1b2d4f;
 }
 
-/* About Section */
+/* =========================
+   ABOUT SECTION
+========================= */
 .about-section {
   padding: 60px 20px;
   background-color: #f5f5f5;
@@ -109,7 +123,9 @@ ul {
   font-size: 18px;
 }
 
-/* Services Section */
+/* =========================
+   SERVICES SECTION
+========================= */
 .services-section {
   padding: 60px 20px;
   text-align: center;
@@ -125,9 +141,12 @@ ul {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
+  line-height: 1.8;
 }
 
-/* Contact Section */
+/* =========================
+   CONTACT SECTION
+========================= */
 .contact-section {
   padding: 60px 20px;
   background-color: #f5f5f5;
@@ -144,7 +163,9 @@ ul {
   margin-bottom: 10px;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
 .footer {
   background-color: #1b2d4f;
   color: white;
